@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script> 
+			function Operation(operand) { 
+				
+
+				var firstValue = parseInt(document.getElementById('txtFirstNumber').value);
+				var secondValue = parseInt(document.getElementById('txtSecondNumber').value);				
+				var result = 0;
+				switch(operand){
+
+					case '+' : 	result = ( (x, y) => {	return x + y; } )( firstValue, secondValue );
+								break;
+
+					case '-' : 	result = ( (x, y) => {	return x - y; } )( firstValue, secondValue );
+								break;
+					case '*' : 	result = ( (x, y) => {	return x * y; } )( firstValue, secondValue );
+								break;
+					case '/' : 	result = ( (x, y) => {	return x / y; } )( firstValue, secondValue );
+								break;
+				}
+				
+				alert(result);
+			}			
+		</script>
+	</head>
+	<body>
+		<fieldset style="width:280px">
+			<legend>Arrow Calculator </legend>
+			
+					Number1:<input type="text" id="txtFirstNumber" /><br><br>
+					Number2:<input type="text" id="txtSecondNumber" /><br><br>
+					<input type="button" id="btnADD" value="Addition" onclick="Operation('+')" />
+					<input type="button" id="btnSUB" value="Subtraction" onclick="Operation('-')"/><br><br>
+					<input type="button" id="btnMUL" value="Multiplication" onclick="Operation('*')"/>
+					<input type="button" id="btnDIV" value="Division" onclick="Operation('/')"/>				
+		</fieldset>		
+	</body>
+</html>
