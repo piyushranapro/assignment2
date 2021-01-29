@@ -1,0 +1,33 @@
+<html>
+   <body>make arrow to reduce fuction</br>
+       <script type="text/javascript">
+         
+            
+            var inputArray  = [9,3,7,21,6,8];
+            var outputArray = inputArray.map(x => x+50);
+ 
+            document.write("Input Array for Map Function: " + inputArray + "</br>");
+            document.write("Map function output: " +  outputArray + "</br> </br>");
+            
+ 
+            
+            var inputArray = [500, 200, 100, 100];
+ 
+            var outputArray = inputArray.reduce(x = (firstValue, restTotalValue) => firstValue - restTotalValue); 
+ 
+    
+            document.write("Input Array for Reduce Function: " + inputArray + "</br>");
+            document.write("Reduce function output: " +  outputArray + "</br> </br>");
+ 
+            
+            var inputArray  = [2,3,4,5,6,7,8];
+ 
+            var outputArray = inputArray.filter(x => x%2==0);
+                                                         
+ 
+            document.write("Input Array for Filter Function: " + inputArray + "</br>");
+            document.write("Filter function output: " +  outputArray);
+    
+       </script>
+   </body>
+ </html>
